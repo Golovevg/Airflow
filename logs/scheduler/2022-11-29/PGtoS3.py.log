@@ -10183,3 +10183,59 @@
 [2022-11-29T21:17:05.819+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:17:05.819+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2022-11-29T21:17:05.853+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:17:05.853+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
 [2022-11-29T21:17:05.886+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.983 seconds
+[2022-11-29T21:17:36.806+0000] {processor.py:154} INFO - Started process (PID=70480) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:17:36.809+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:17:36.811+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:17:36.811+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:17:37.456+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:17:37.499+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:17:37.498+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:17:37.527+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:17:37.527+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:17:37.552+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.754 seconds
+[2022-11-29T21:18:08.290+0000] {processor.py:154} INFO - Started process (PID=70514) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:08.294+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:18:08.296+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:08.296+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:08.895+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:08.935+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:08.935+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:18:08.957+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:08.957+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:18:08.972+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.691 seconds
+[2022-11-29T21:18:39.853+0000] {processor.py:154} INFO - Started process (PID=70540) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:39.859+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:18:39.861+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:39.861+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:40.414+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:18:40.466+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:40.466+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:18:40.490+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:18:40.490+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:18:40.507+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.661 seconds
+[2022-11-29T21:19:11.390+0000] {processor.py:154} INFO - Started process (PID=70573) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:11.393+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:19:11.395+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:11.395+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:11.947+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:11.980+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:11.980+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:19:12.001+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:12.000+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:19:12.047+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.662 seconds
+[2022-11-29T21:19:42.719+0000] {processor.py:154} INFO - Started process (PID=70606) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:42.729+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:19:42.735+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:42.735+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:43.276+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:19:43.330+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:43.330+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:19:43.363+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:19:43.362+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:19:43.389+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.679 seconds
+[2022-11-29T21:20:14.057+0000] {processor.py:154} INFO - Started process (PID=70640) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:14.060+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:20:14.061+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:14.061+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:14.783+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:14.821+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:14.821+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:20:14.838+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:14.838+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:20:14.857+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.804 seconds
+[2022-11-29T21:20:45.763+0000] {processor.py:154} INFO - Started process (PID=70664) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:45.768+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:20:45.771+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:45.771+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:46.591+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:20:46.635+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:46.635+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:20:46.663+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:20:46.663+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:20:46.689+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.938 seconds
+[2022-11-29T21:21:16.844+0000] {processor.py:154} INFO - Started process (PID=70700) to work on /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:21:16.848+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/PGtoS3.py for tasks to queue
+[2022-11-29T21:21:16.851+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:16.850+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:21:17.415+0000] {processor.py:766} INFO - DAG(s) dict_keys(['PG_to_S3']) retrieved from /opt/airflow/dags/PGtoS3.py
+[2022-11-29T21:21:17.449+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:17.449+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:21:17.472+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:17.472+0000] {dag.py:3340} INFO - Setting next_dagrun for PG_to_S3 to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:21:17.494+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/PGtoS3.py took 0.657 seconds
