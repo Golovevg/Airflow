@@ -10295,3 +10295,66 @@
 [2022-11-29T21:21:17.635+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:17.635+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2022-11-29T21:21:17.659+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:17.659+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
 [2022-11-29T21:21:17.673+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.113 seconds
+[2022-11-29T21:21:48.678+0000] {processor.py:154} INFO - Started process (PID=70740) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:21:48.680+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:21:48.682+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:48.682+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:21:48.709+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:21:48.743+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:48.743+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:21:48.763+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:21:48.763+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:21:48.775+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.101 seconds
+[2022-11-29T21:22:20.026+0000] {processor.py:154} INFO - Started process (PID=70774) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:20.029+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:22:20.030+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:20.030+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:20.068+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:20.103+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:20.103+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:22:20.123+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:20.123+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:22:20.139+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.117 seconds
+[2022-11-29T21:22:51.401+0000] {processor.py:154} INFO - Started process (PID=70809) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:51.405+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:22:51.407+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:51.407+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:51.439+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:22:51.482+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:51.482+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:22:51.510+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:22:51.510+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:22:51.530+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.133 seconds
+[2022-11-29T21:23:22.723+0000] {processor.py:154} INFO - Started process (PID=70841) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:22.772+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:23:22.776+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:22.775+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:22.811+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:22.859+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:22.858+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:23:22.896+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:22.895+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:23:22.932+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.215 seconds
+[2022-11-29T21:23:54.114+0000] {processor.py:154} INFO - Started process (PID=70868) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:54.117+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:23:54.119+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:54.119+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:54.141+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:23:54.179+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:54.179+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:23:54.199+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:23:54.199+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:23:54.215+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.105 seconds
+[2022-11-29T21:24:26.130+0000] {processor.py:154} INFO - Started process (PID=70901) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:26.133+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:24:26.134+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:26.134+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:26.210+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:26.262+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:26.262+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:24:26.289+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:26.289+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:24:26.304+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.178 seconds
+[2022-11-29T21:24:57.688+0000] {processor.py:154} INFO - Started process (PID=70934) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:57.698+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:24:57.700+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:57.700+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:57.727+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:24:57.769+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:57.769+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:24:57.793+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:24:57.793+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:24:57.837+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.156 seconds
+[2022-11-29T21:25:29.350+0000] {processor.py:154} INFO - Started process (PID=70967) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:25:29.353+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:25:29.354+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:25:29.354+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:25:29.383+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:25:29.440+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:25:29.440+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:25:29.469+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:25:29.468+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:25:29.500+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.154 seconds
+[2022-11-29T21:26:00.907+0000] {processor.py:154} INFO - Started process (PID=70999) to work on /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:26:00.918+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/fourth_dug.py for tasks to queue
+[2022-11-29T21:26:00.921+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:26:00.921+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:26:00.961+0000] {processor.py:766} INFO - DAG(s) dict_keys(['a_fourth_dug']) retrieved from /opt/airflow/dags/fourth_dug.py
+[2022-11-29T21:26:01.031+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:26:01.031+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-29T21:26:01.083+0000] {logging_mixin.py:120} INFO - [2022-11-29T21:26:01.083+0000] {dag.py:3340} INFO - Setting next_dagrun for a_fourth_dug to 2022-11-29T00:00:00+00:00, run_after=2022-11-30T00:00:00+00:00
+[2022-11-29T21:26:01.135+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/fourth_dug.py took 0.233 seconds
