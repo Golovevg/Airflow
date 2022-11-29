@@ -1,0 +1,23 @@
+[2022-11-11T15:29:20.204+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.download manual__2022-11-11T14:54:10.947391+00:00 [queued]>
+[2022-11-11T15:29:20.211+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: first_dag.download manual__2022-11-11T14:54:10.947391+00:00 [queued]>
+[2022-11-11T15:29:20.212+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-11T15:29:20.213+0000] {taskinstance.py:1363} INFO - Starting attempt 4 of 4
+[2022-11-11T15:29:20.214+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-11T15:29:20.222+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): download> on 2022-11-11 14:54:10.947391+00:00
+[2022-11-11T15:29:20.227+0000] {standard_task_runner.py:55} INFO - Started process 25138 to run task
+[2022-11-11T15:29:20.232+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'download', 'manual__2022-11-11T14:54:10.947391+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/first_dug.py', '--cfg-path', '/tmp/tmpvvm6x21x']
+[2022-11-11T15:29:20.234+0000] {standard_task_runner.py:83} INFO - Job 85: Subtask download
+[2022-11-11T15:29:20.300+0000] {task_command.py:376} INFO - Running <TaskInstance: first_dag.download manual__2022-11-11T14:54:10.947391+00:00 [running]> on host 0b03955da713
+[2022-11-11T15:29:20.350+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=download
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-11T14:54:10.947391+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-11T14:54:10.947391+00:00
+[2022-11-11T15:29:20.976+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-11T15:29:20.999+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=download, execution_date=20221111T145410, start_date=20221111T152920, end_date=20221111T152920
+[2022-11-11T15:29:21.065+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-11T15:29:21.082+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

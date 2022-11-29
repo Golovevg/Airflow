@@ -1,0 +1,44 @@
+[2022-11-22T01:44:17.433+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:44:17.441+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:44:17.443+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:44:17.444+0000] {taskinstance.py:1363} INFO - Starting attempt 83 of 83
+[2022-11-22T01:44:17.445+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:44:17.455+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-22T01:44:17.469+0000] {standard_task_runner.py:55} INFO - Started process 30079 to run task
+[2022-11-22T01:44:17.473+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpj0srn9mm']
+[2022-11-22T01:44:17.476+0000] {standard_task_runner.py:83} INFO - Job 197: Subtask PG_to_S3
+[2022-11-22T01:44:17.550+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-22T01:44:17.615+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=83
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-22T01:44:19.427+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 30, in execute
+    self.s3().Bucket(self.bucket).upload_file(self.filename, self.postgres())
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 74, in s3
+    result = object.put(Body=txt_data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/resources/factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 902, in _make_api_call
+    api_params, operation_model, context=request_context
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 963, in _convert_to_request_dict
+    api_params, operation_model
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/validate.py", line 381, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter Key, value: [(1, 'China'), (2, 'Spain'), (3, 'United Kingdom'), (4, 'Saudi Arabia'), (5, 'India'), (6, 'Bangladesh'), (7, 'Portugal'), (8, 'Russian Federation'), (9, 'Japan'), (10, 'Germany')], type: <class 'list'>, valid types: <class 'str'>
+[2022-11-22T01:44:19.472+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221122T014417, end_date=20221122T014419
+[2022-11-22T01:44:19.487+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 197 for task PG_to_S3 (Parameter validation failed:
+Invalid type for parameter Key, value: [(1, 'China'), (2, 'Spain'), (3, 'United Kingdom'), (4, 'Saudi Arabia'), (5, 'India'), (6, 'Bangladesh'), (7, 'Portugal'), (8, 'Russian Federation'), (9, 'Japan'), (10, 'Germany')], type: <class 'list'>, valid types: <class 'str'>; 30079)
+[2022-11-22T01:44:19.541+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-22T01:44:19.558+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,48 @@
+[2022-11-22T01:24:57.014+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:24:57.023+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:24:57.026+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:24:57.029+0000] {taskinstance.py:1363} INFO - Starting attempt 75 of 75
+[2022-11-22T01:24:57.031+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:24:57.044+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-22T01:24:57.053+0000] {standard_task_runner.py:55} INFO - Started process 29100 to run task
+[2022-11-22T01:24:57.059+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpnpmn67vu']
+[2022-11-22T01:24:57.071+0000] {standard_task_runner.py:83} INFO - Job 189: Subtask PG_to_S3
+[2022-11-22T01:24:57.154+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-22T01:24:57.220+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=75
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-22T01:24:58.847+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 30, in execute
+    self.s3().Bucket(self.bucket).upload_file(self.filename, self.postgres())
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 239, in bucket_upload_file
+    Config=Config,
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 148, in upload_file
+    callback=Callback,
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/transfer.py", line 288, in upload_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 266, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 269, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/upload.py", line 585, in _submit
+    upload_input_manager.provide_transfer_size(transfer_future)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/upload.py", line 244, in provide_transfer_size
+    self._osutil.get_file_size(transfer_future.meta.call_args.fileobj)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/utils.py", line 247, in get_file_size
+    return os.path.getsize(filename)
+  File "/usr/local/lib/python3.7/genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [Errno 2] No such file or directory: 'ggggg'
+[2022-11-22T01:24:58.865+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221122T012457, end_date=20221122T012458
+[2022-11-22T01:24:58.876+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 189 for task PG_to_S3 ([Errno 2] No such file or directory: 'ggggg'; 29100)
+[2022-11-22T01:24:58.925+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-22T01:24:58.945+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

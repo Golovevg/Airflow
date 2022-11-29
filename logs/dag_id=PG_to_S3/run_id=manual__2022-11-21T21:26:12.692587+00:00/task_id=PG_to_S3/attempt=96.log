@@ -1,0 +1,52 @@
+[2022-11-22T02:28:42.084+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T02:28:42.095+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T02:28:42.096+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T02:28:42.098+0000] {taskinstance.py:1363} INFO - Starting attempt 96 of 96
+[2022-11-22T02:28:42.100+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T02:28:42.110+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-22T02:28:42.116+0000] {standard_task_runner.py:55} INFO - Started process 32259 to run task
+[2022-11-22T02:28:42.121+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpyx7umx5n']
+[2022-11-22T02:28:42.144+0000] {standard_task_runner.py:83} INFO - Job 210: Subtask PG_to_S3
+[2022-11-22T02:28:42.220+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-22T02:28:42.287+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=96
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-22T02:28:43.860+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 30, in execute
+    self.s3()
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 70, in s3
+    return object.put(Body=data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/resources/factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/resources/action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/client.py", line 914, in _make_api_call
+    context=request_context,
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 416, in emit_until_response
+    return self._emitter.emit_until_response(aliased_event_name, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 271, in emit_until_response
+    responses = self._emit(event_name, kwargs, stop_on_response=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/utils.py", line 2753, in conditionally_calculate_md5
+    md5_digest = calculate_md5(body, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/utils.py", line 2720, in calculate_md5
+    binary_md5 = _calculate_md5_from_file(body)
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/utils.py", line 2732, in _calculate_md5_from_file
+    for chunk in iter(lambda: fileobj.read(1024 * 1024), b''):
+  File "/home/airflow/.local/lib/python3.7/site-packages/botocore/utils.py", line 2732, in <lambda>
+    for chunk in iter(lambda: fileobj.read(1024 * 1024), b''):
+io.UnsupportedOperation: not readable
+[2022-11-22T02:28:43.888+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221122T022842, end_date=20221122T022843
+[2022-11-22T02:28:43.904+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 210 for task PG_to_S3 (not readable; 32259)
+[2022-11-22T02:28:43.962+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-22T02:28:43.985+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

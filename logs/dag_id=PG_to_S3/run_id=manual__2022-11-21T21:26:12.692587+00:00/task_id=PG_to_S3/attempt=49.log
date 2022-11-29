@@ -1,0 +1,24 @@
+[2022-11-22T00:12:19.866+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T00:12:19.875+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T00:12:19.877+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T00:12:19.878+0000] {taskinstance.py:1363} INFO - Starting attempt 49 of 49
+[2022-11-22T00:12:19.879+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T00:12:19.888+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-22T00:12:19.895+0000] {standard_task_runner.py:55} INFO - Started process 25577 to run task
+[2022-11-22T00:12:19.900+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpjmegxyso']
+[2022-11-22T00:12:19.904+0000] {standard_task_runner.py:83} INFO - Job 163: Subtask PG_to_S3
+[2022-11-22T00:12:20.005+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-22T00:12:20.107+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=49
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-22T00:12:30.146+0000] {local_task_job.py:228} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-11-22T00:12:30.150+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 25577. PIDs of all processes in the group: [25577]
+[2022-11-22T00:12:30.153+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 25577
+[2022-11-22T00:12:30.177+0000] {taskinstance.py:1562} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-11-22T00:12:30.335+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=25577, status='terminated', exitcode=0, started='00:12:18') (25577) terminated with exit code 0

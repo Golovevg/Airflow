@@ -1,0 +1,23 @@
+[2022-11-10T12:47:10.080+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: a_first_dug.hello_task scheduled__2022-11-09T12:00:00+00:00 [queued]>
+[2022-11-10T12:47:10.171+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: a_first_dug.hello_task scheduled__2022-11-09T12:00:00+00:00 [queued]>
+[2022-11-10T12:47:10.174+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10T12:47:10.176+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-10T12:47:10.190+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10T12:47:10.268+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): hello_task> on 2022-11-09 12:00:00+00:00
+[2022-11-10T12:47:10.408+0000] {standard_task_runner.py:55} INFO - Started process 76414 to run task
+[2022-11-10T12:47:10.488+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'a_first_dug', 'hello_task', 'scheduled__2022-11-09T12:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/first_dug.py', '--cfg-path', '/tmp/tmppeq11a3c']
+[2022-11-10T12:47:10.492+0000] {standard_task_runner.py:83} INFO - Job 17: Subtask hello_task
+[2022-11-10T12:47:11.015+0000] {task_command.py:376} INFO - Running <TaskInstance: a_first_dug.hello_task scheduled__2022-11-09T12:00:00+00:00 [running]> on host 61237bbf81bc
+[2022-11-10T12:47:11.635+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=a_first_dug
+AIRFLOW_CTX_TASK_ID=hello_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-09T12:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-09T12:00:00+00:00
+[2022-11-10T12:47:11.645+0000] {python.py:177} INFO - Done. Returned value was: Hello world from first Airflow DAG!
+[2022-11-10T12:47:11.772+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=a_first_dug, task_id=hello_task, execution_date=20221109T120000, start_date=20221110T124710, end_date=20221110T124711
+[2022-11-10T12:47:12.018+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-10T12:47:12.171+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

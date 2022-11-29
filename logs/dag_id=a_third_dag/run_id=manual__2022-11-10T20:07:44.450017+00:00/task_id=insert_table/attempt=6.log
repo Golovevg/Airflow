@@ -1,0 +1,29 @@
+[2022-11-10T20:15:27.224+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: a_third_dag.insert_table manual__2022-11-10T20:07:44.450017+00:00 [queued]>
+[2022-11-10T20:15:27.242+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: a_third_dag.insert_table manual__2022-11-10T20:07:44.450017+00:00 [queued]>
+[2022-11-10T20:15:27.244+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10T20:15:27.245+0000] {taskinstance.py:1363} INFO - Starting attempt 6 of 6
+[2022-11-10T20:15:27.246+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10T20:15:27.255+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresOperator): insert_table> on 2022-11-10 20:07:44.450017+00:00
+[2022-11-10T20:15:27.281+0000] {standard_task_runner.py:55} INFO - Started process 16481 to run task
+[2022-11-10T20:15:27.285+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'a_third_dag', 'insert_table', 'manual__2022-11-10T20:07:44.450017+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/third_dug.py', '--cfg-path', '/tmp/tmpcdft4jor']
+[2022-11-10T20:15:27.286+0000] {standard_task_runner.py:83} INFO - Job 67: Subtask insert_table
+[2022-11-10T20:15:27.341+0000] {task_command.py:376} INFO - Running <TaskInstance: a_third_dag.insert_table manual__2022-11-10T20:07:44.450017+00:00 [running]> on host 0b03955da713
+[2022-11-10T20:15:27.391+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=a_third_dag
+AIRFLOW_CTX_TASK_ID=insert_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-10T20:07:44.450017+00:00
+AIRFLOW_CTX_TRY_NUMBER=6
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-10T20:07:44.450017+00:00
+[2022-11-10T20:15:27.402+0000] {base.py:71} INFO - Using connection ID '***' for task execution.
+[2022-11-10T20:15:27.410+0000] {sql.py:315} INFO - Running statement: 
+             INSERT INTO currency_pair_7 (date_scrapping, price)
+             VALUES (default, 1234)
+             ;
+           , parameters: None
+[2022-11-10T20:15:27.420+0000] {sql.py:324} INFO - Rows affected: 1
+[2022-11-10T20:15:27.431+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=a_third_dag, task_id=insert_table, execution_date=20221110T200744, start_date=20221110T201527, end_date=20221110T201527
+[2022-11-10T20:15:27.457+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-10T20:15:27.474+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

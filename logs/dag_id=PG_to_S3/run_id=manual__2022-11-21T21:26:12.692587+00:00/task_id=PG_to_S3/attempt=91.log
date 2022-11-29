@@ -1,0 +1,30 @@
+[2022-11-22T01:58:21.166+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:58:21.174+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-22T01:58:21.175+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:58:21.176+0000] {taskinstance.py:1363} INFO - Starting attempt 91 of 91
+[2022-11-22T01:58:21.177+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22T01:58:21.186+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-22T01:58:21.193+0000] {standard_task_runner.py:55} INFO - Started process 30788 to run task
+[2022-11-22T01:58:21.198+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '205', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmp3xaqkirc']
+[2022-11-22T01:58:21.201+0000] {standard_task_runner.py:83} INFO - Job 205: Subtask PG_to_S3
+[2022-11-22T01:58:21.274+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-22T01:58:21.335+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=91
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-22T01:58:23.121+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 30, in execute
+    self.s3()
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 54, in s3
+    data = csv(self.postgres())
+TypeError: 'module' object is not callable
+[2022-11-22T01:58:23.169+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221122T015821, end_date=20221122T015823
+[2022-11-22T01:58:23.186+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 205 for task PG_to_S3 ('module' object is not callable; 30788)
+[2022-11-22T01:58:23.246+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-22T01:58:23.266+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

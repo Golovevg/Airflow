@@ -1,0 +1,23 @@
+[2022-11-21T22:51:14.902+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-21T22:51:14.910+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-21T22:51:14.911+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T22:51:14.912+0000] {taskinstance.py:1363} INFO - Starting attempt 24 of 24
+[2022-11-21T22:51:14.913+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T22:51:14.924+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-21T22:51:14.937+0000] {standard_task_runner.py:55} INFO - Started process 21575 to run task
+[2022-11-21T22:51:14.943+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '133', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpa5nxzgmk']
+[2022-11-21T22:51:14.946+0000] {standard_task_runner.py:83} INFO - Job 133: Subtask PG_to_S3
+[2022-11-21T22:51:15.019+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-21T22:51:15.083+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=24
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-21T22:51:16.463+0000] {logging_mixin.py:120} INFO - [(1, 'China'), (2, 'Spain'), (3, 'United Kingdom'), (4, 'Saudi Arabia'), (5, 'India'), (6, 'Bangladesh'), (7, 'Portugal'), (8, 'Russian Federation'), (9, 'Japan'), (10, 'Germany')]
+[2022-11-21T22:51:16.516+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221121T225114, end_date=20221121T225116
+[2022-11-21T22:51:16.578+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-21T22:51:16.636+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

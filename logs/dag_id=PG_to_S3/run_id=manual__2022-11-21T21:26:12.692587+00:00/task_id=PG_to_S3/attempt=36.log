@@ -1,0 +1,38 @@
+[2022-11-21T23:09:44.801+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-21T23:09:44.815+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [queued]>
+[2022-11-21T23:09:44.818+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T23:09:44.819+0000] {taskinstance.py:1363} INFO - Starting attempt 36 of 36
+[2022-11-21T23:09:44.821+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T23:09:44.835+0000] {taskinstance.py:1383} INFO - Executing <Task(PostgresToS3Operator): PG_to_S3> on 2022-11-21 21:26:12.692587+00:00
+[2022-11-21T23:09:44.845+0000] {standard_task_runner.py:55} INFO - Started process 22499 to run task
+[2022-11-21T23:09:44.854+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'PG_to_S3', 'PG_to_S3', 'manual__2022-11-21T21:26:12.692587+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/PGtoS3.py', '--cfg-path', '/tmp/tmpmd30t4dw']
+[2022-11-21T23:09:44.859+0000] {standard_task_runner.py:83} INFO - Job 145: Subtask PG_to_S3
+[2022-11-21T23:09:44.948+0000] {task_command.py:376} INFO - Running <TaskInstance: PG_to_S3.PG_to_S3 manual__2022-11-21T21:26:12.692587+00:00 [running]> on host b785e9657fa7
+[2022-11-21T23:09:45.012+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=eugeny
+AIRFLOW_CTX_DAG_ID=PG_to_S3
+AIRFLOW_CTX_TASK_ID=PG_to_S3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T21:26:12.692587+00:00
+AIRFLOW_CTX_TRY_NUMBER=36
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-21T21:26:12.692587+00:00
+[2022-11-21T23:09:46.695+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/pgtos3.py", line 27, in execute
+    self.s3().Bucket(self.bucket).upload_file('string', self.bucket, self.postgres())
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 239, in bucket_upload_file
+    Config=Config,
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 148, in upload_file
+    callback=Callback,
+  File "/home/airflow/.local/lib/python3.7/site-packages/boto3/s3/transfer.py", line 285, in upload_file
+    filename, bucket, key, extra_args, subscribers
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/manager.py", line 321, in upload
+    self._validate_all_known_args(extra_args, self.ALLOWED_UPLOAD_ARGS)
+  File "/home/airflow/.local/lib/python3.7/site-packages/s3transfer/manager.py", line 502, in _validate_all_known_args
+    "must be one of: %s" % (kwarg, ', '.join(allowed))
+ValueError: Invalid extra_args key '(1, 'China')', must be one of: ACL, CacheControl, ChecksumAlgorithm, ContentDisposition, ContentEncoding, ContentLanguage, ContentType, ExpectedBucketOwner, Expires, GrantFullControl, GrantRead, GrantReadACP, GrantWriteACP, Metadata, ObjectLockLegalHoldStatus, ObjectLockMode, ObjectLockRetainUntilDate, RequestPayer, ServerSideEncryption, StorageClass, SSECustomerAlgorithm, SSECustomerKey, SSECustomerKeyMD5, SSEKMSKeyId, SSEKMSEncryptionContext, Tagging, WebsiteRedirectLocation
+[2022-11-21T23:09:46.709+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=PG_to_S3, task_id=PG_to_S3, execution_date=20221121T212612, start_date=20221121T230944, end_date=20221121T230946
+[2022-11-21T23:09:46.721+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 145 for task PG_to_S3 (Invalid extra_args key '(1, 'China')', must be one of: ACL, CacheControl, ChecksumAlgorithm, ContentDisposition, ContentEncoding, ContentLanguage, ContentType, ExpectedBucketOwner, Expires, GrantFullControl, GrantRead, GrantReadACP, GrantWriteACP, Metadata, ObjectLockLegalHoldStatus, ObjectLockMode, ObjectLockRetainUntilDate, RequestPayer, ServerSideEncryption, StorageClass, SSECustomerAlgorithm, SSECustomerKey, SSECustomerKeyMD5, SSEKMSKeyId, SSEKMSEncryptionContext, Tagging, WebsiteRedirectLocation; 22499)
+[2022-11-21T23:09:46.787+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-21T23:09:46.812+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
