@@ -49,8 +49,8 @@ def clean_bucket():
         print('Connection has been establish')
         os.system("rm -rf *")
         print("The folowing files have been removed", deleted_files)
-    # except TypeError:
-    #     print("Oops! Something went wrong.")
+    except TypeError:
+        print("Oops! Something went wrong.")
 
 t1 = PythonOperator(
         task_id='clean_bucket',
@@ -59,3 +59,5 @@ t1 = PythonOperator(
 )
 
 t1
+
+##to mani time was spent on this task
