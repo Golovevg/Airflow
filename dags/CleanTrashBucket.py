@@ -1,15 +1,10 @@
 from airflow import DAG
-from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
 from airflow.operators.python_operator import PythonOperator
 import os
-import sys
+from datetime import timedelta, datetime
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 
-import pandas as pd
-import csv
-import requests
-import datetime
-import pendulum
 
 default_args = {
     'owner': 'Eugeny Golovanov',
@@ -18,48 +13,39 @@ default_args = {
     'email': ['airflow.golovanov@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': False,
-    'retries': 5,
+    'retries': False,
     'retry_delay': timedelta(minutes=1),
-
 }
 
-dag = DAG('Clean Trash Bucket',
+dag = DAG('clean_trash_bucket',
           default_args=default_args,
           schedule_interval='0 * * * *',
-          catchup=False)
-
-
-
-
-
+          catchup=False
+          )
 
 def clean_bucket():
-    os.chdir('/Users/eugenygolovanov/Library/Mobile Documents/com~apple~CloudDocs/.Trash')
-    if len(sys.argv) >= 2:
-        if sys.argv[1] == '-t' or sys.argv[1] == '-T':
-            os.system("tree ./")
-    elif sys.argv[1] == '-l' or sys.argv[1] == '-L':
-        os.system("ls -al")
-    else:
-    print("Nothing in the bin to delete")
-    os.system("rm -rf *")
+    os.chdir('/opt/airflow/dags/trashbox')
+    deleted_files = os.system("ls")
+    try:
+        sql_stmt = "create table if not exists log_of_delete(file_id serial, file_name varchar)"
+        pg_hook = PostgresHook(
+            postgres_conn_id='postgres',
+            schema='public'
+        )
+        pg_conn = pg_hook.get_conn()
+        cursor = pg_conn.cursor()
+        cursor.execute(sql_stmt)
+        return cursor.fetchall()
+        print('Connection has been establish')
+        os.system("rm -rf *")
+        print("The folowing files have been removed", deleted_files)
+    except TypeError:
+        print("Oops! Something went wrong.")
 
-t1 = BashOperator(
-        task_id='make_dir',
-        bash_command= 'touch data.csv')
+t1 = PythonOperator(
+        task_id='clean_bucket',
+        python_callable=clean_bucket,
+        dag=dag
+)
 
-
-def load_data():
-    req = requests.get('https://footystats.org/c-dl.php?type=league&comp=1625')
-    url_content = req.content
-    data = open('data.csv', 'wb')
-    data.write(url_content)
-    data.close()
-
-
-t2 = PythonOperator(task_id='download', python_callable=load_data, dag=dag)
-
-t1 >> t2
-
-
-# In[ ]:
+t1

@@ -1,0 +1,135 @@
+[2022-11-30T15:09:17.758+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:09:17.762+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:09:17.763+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:09:17.763+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:09:17.767+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:09:17.785+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.030 seconds
+[2022-11-30T15:10:23.049+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:10:23.051+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:10:23.052+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:10:23.052+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:10:23.055+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:10:23.071+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:11:28.902+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:11:28.904+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:11:28.908+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:11:28.908+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:11:28.912+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:11:28.930+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.032 seconds
+[2022-11-30T15:12:34.966+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:12:34.969+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:12:34.970+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:12:34.970+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:12:34.975+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:12:34.990+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds
+[2022-11-30T15:13:39.725+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:13:39.731+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:13:39.732+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:13:39.731+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:13:39.737+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:13:39.753+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.030 seconds
+[2022-11-30T15:14:45.266+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:14:45.270+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:14:45.271+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:14:45.271+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:14:45.276+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:14:45.291+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.028 seconds
+[2022-11-30T15:15:50.190+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:15:50.192+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:15:50.193+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:15:50.193+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:15:50.197+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:15:50.210+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.023 seconds
+[2022-11-30T15:16:55.400+0000] {processor.py:154} INFO - Started process (PID=39) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:16:55.402+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:16:55.403+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:16:55.403+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:16:55.407+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:16:55.422+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:18:00.309+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:18:00.310+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:18:00.311+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:18:00.311+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:18:00.316+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:18:00.333+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds
+[2022-11-30T15:19:05.975+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:19:05.977+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:19:05.979+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:19:05.979+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:19:05.985+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:19:06.001+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.028 seconds
+[2022-11-30T15:20:11.697+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:20:11.699+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:20:11.700+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:20:11.700+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:20:11.705+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:20:11.719+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:21:17.523+0000] {processor.py:154} INFO - Started process (PID=39) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:21:17.526+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:21:17.527+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:21:17.527+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:21:17.531+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:21:17.545+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:22:24.618+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:22:24.621+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:22:24.623+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:22:24.623+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:22:24.635+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:22:24.668+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.056 seconds
+[2022-11-30T15:23:29.904+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:23:29.906+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:23:29.907+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:23:29.907+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:23:29.911+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:23:29.926+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.026 seconds
+[2022-11-30T15:24:34.867+0000] {processor.py:154} INFO - Started process (PID=39) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:24:34.869+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:24:34.870+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:24:34.870+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:24:34.873+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:24:34.890+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds
+[2022-11-30T15:25:40.169+0000] {processor.py:154} INFO - Started process (PID=39) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:25:40.171+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:25:40.173+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:25:40.173+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:25:40.178+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:25:40.193+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds
+[2022-11-30T15:26:45.821+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:26:45.823+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:26:45.824+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:26:45.824+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:26:45.833+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:26:45.847+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.028 seconds
+[2022-11-30T15:27:50.999+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:27:51.006+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:27:51.007+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:27:51.007+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:27:51.012+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:27:51.030+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.034 seconds
+[2022-11-30T15:28:56.510+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:28:56.512+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:28:56.516+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:28:56.516+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:28:56.527+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:28:56.554+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.047 seconds
+[2022-11-30T15:30:02.057+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:30:02.060+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:30:02.061+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:30:02.061+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:30:02.065+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:30:02.080+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:31:07.704+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:31:07.707+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:31:07.708+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:31:07.708+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:31:07.711+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:31:07.735+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.034 seconds
+[2022-11-30T15:32:13.401+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:32:13.402+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:32:13.404+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:32:13.404+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:32:13.410+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:32:13.427+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.029 seconds
+[2022-11-30T15:33:19.238+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:33:19.241+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:33:19.242+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:33:19.242+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:33:19.245+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:33:19.262+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.028 seconds
+[2022-11-30T15:34:25.113+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:34:25.115+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:34:25.116+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:34:25.116+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:34:25.120+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:34:25.134+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.024 seconds
+[2022-11-30T15:35:31.296+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:35:31.298+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:35:31.300+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:35:31.300+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:35:31.307+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:35:31.320+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds
+[2022-11-30T15:36:36.892+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:36:36.894+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:36:36.897+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:36:36.897+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:36:36.901+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:36:36.914+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.025 seconds
+[2022-11-30T15:37:42.442+0000] {processor.py:154} INFO - Started process (PID=40) to work on /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:37:42.444+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc for tasks to queue
+[2022-11-30T15:37:42.445+0000] {logging_mixin.py:120} INFO - [2022-11-30T15:37:42.445+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:37:42.450+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc
+[2022-11-30T15:37:42.465+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/trashbox/Golovanov_CV_eng.doc took 0.027 seconds

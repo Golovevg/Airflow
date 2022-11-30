@@ -1,0 +1,27 @@
+[2022-11-30T15:37:54.766+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: clean_trash_bucket.clean_bucket manual__2022-11-30T14:00:21.617373+00:00 [None]>
+[2022-11-30T15:37:54.774+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: clean_trash_bucket.clean_bucket manual__2022-11-30T14:00:21.617373+00:00 [None]>
+[2022-11-30T15:37:54.776+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T15:37:54.777+0000] {taskinstance.py:1363} INFO - Starting attempt 22 of 22
+[2022-11-30T15:37:54.777+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-30T15:37:54.787+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): clean_bucket> on 2022-11-30 14:00:21.617373+00:00
+[2022-11-30T15:37:54.793+0000] {standard_task_runner.py:55} INFO - Started process 5581 to run task
+[2022-11-30T15:37:54.800+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'clean_trash_bucket', 'clean_bucket', 'manual__2022-11-30T14:00:21.617373+00:00', '--job-id', '76', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/CleanTrashBucket.py', '--cfg-path', '/tmp/tmp4h6x9t82']
+[2022-11-30T15:37:54.803+0000] {standard_task_runner.py:83} INFO - Job 76: Subtask clean_bucket
+[2022-11-30T15:37:54.875+0000] {task_command.py:376} INFO - Running <TaskInstance: clean_trash_bucket.clean_bucket manual__2022-11-30T14:00:21.617373+00:00 [running]> on host cad2b5b69ef8
+[2022-11-30T15:37:54.929+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***.golovanov@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Eugeny Golovanov
+AIRFLOW_CTX_DAG_ID=clean_trash_bucket
+AIRFLOW_CTX_TASK_ID=clean_bucket
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-30T14:00:21.617373+00:00
+AIRFLOW_CTX_TRY_NUMBER=22
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-30T14:00:21.617373+00:00
+[2022-11-30T15:37:54.940+0000] {logging_mixin.py:120} INFO - Connection has been establish
+[2022-11-30T15:37:54.993+0000] {logging_mixin.py:120} INFO - The folowing files have been removed
+[2022-11-30T15:37:54.994+0000] {logging_mixin.py:120} INFO - PostgreSQL connection is closed
+[2022-11-30T15:37:54.995+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-30T15:37:55.005+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=clean_trash_bucket, task_id=clean_bucket, execution_date=20221130T140021, start_date=20221130T153754, end_date=20221130T153755
+[2022-11-30T15:37:55.051+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-30T15:37:55.067+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
