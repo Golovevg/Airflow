@@ -25,22 +25,32 @@ dag = DAG('clean_trash_bucket',
 
 def clean_bucket():
     os.chdir('/opt/airflow/dags/trashbox')
-    deleted_files = os.system("ls")
+    deleted_files = os.listdir('/opt/airflow/dags/trashbox')
+    def data_for_column(data):
+        f = "('"
+        s = "'),"
+        file_name = str()
+        for i in data:
+            d = (f"{f} {i} {s}")
+            file_name += d
+        return file_name[:-1]
+
+    file_name = data_for_column(deleted_files)
+
     try:
-        sql_stmt = "create table if not exists log_of_delete(file_id serial, file_name varchar)"
+        sql_stmt = "INSERT INTO log_of_delete(file_name) VALUES {}".format(file_name)
         pg_hook = PostgresHook(
-            postgres_conn_id='postgres',
-            schema='public'
+            postgres_conn_id='Postgres'
         )
         pg_conn = pg_hook.get_conn()
         cursor = pg_conn.cursor()
         cursor.execute(sql_stmt)
-        return cursor.fetchall()
+        pg_conn.commit()
         print('Connection has been establish')
         os.system("rm -rf *")
         print("The folowing files have been removed", deleted_files)
-    except TypeError:
-        print("Oops! Something went wrong.")
+    # except TypeError:
+    #     print("Oops! Something went wrong.")
 
 t1 = PythonOperator(
         task_id='clean_bucket',
