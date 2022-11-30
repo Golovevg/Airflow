@@ -36,21 +36,23 @@ def clean_bucket():
         return file_name[:-1]
 
     file_name = data_for_column(deleted_files)
-
-    try:
-        sql_stmt = "INSERT INTO log_of_delete(file_name) VALUES {}".format(file_name)
-        pg_hook = PostgresHook(
-            postgres_conn_id='Postgres'
-        )
-        pg_conn = pg_hook.get_conn()
-        cursor = pg_conn.cursor()
-        cursor.execute(sql_stmt)
-        pg_conn.commit()
-        print('Connection has been establish')
-        os.system("rm -rf *")
-        print("The folowing files have been removed", deleted_files)
-    except TypeError:
-        print("Oops! Something went wrong.")
+    if len(file_name) == 0:
+        print('Nothing to remove')
+    else:
+        try:
+            sql_stmt = "INSERT INTO log_of_delete(file_name) VALUES {}".format(file_name)
+            pg_hook = PostgresHook(
+                postgres_conn_id='Postgres'
+            )
+            pg_conn = pg_hook.get_conn()
+            cursor = pg_conn.cursor()
+            cursor.execute(sql_stmt)
+            pg_conn.commit()
+            print('Connection has been establish')
+            os.system("rm -rf *")
+            print("The folowing files have been removed", deleted_files)
+        except TypeError:
+            print("Oops! Something went wrong.")
 
 t1 = PythonOperator(
         task_id='clean_bucket',
