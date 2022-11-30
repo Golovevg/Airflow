@@ -31,8 +31,8 @@ def clean_bucket():
         s = "'),"
         file_name = str()
         for i in data:
-            d = (f"{f} {i} {s}")
-            file_name += d
+            brackets = (f"{f} {i} {s}")
+            file_name += brackets
         return file_name[:-1]
 
     file_name = data_for_column(deleted_files)
